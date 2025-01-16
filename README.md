@@ -1,0 +1,1 @@
+A simple Todo App to organize your tasks and carry them out effectively.
