@@ -11,7 +11,7 @@ function App() {
       <h1 
       className="text-center text-3xl text-white font-bold" 
       >Your Todo</h1>
-      <div className="max-w-lg mx-auto border border-x-cyan-950 rounded-md p-5 space-y-6">
+      <div className="max-w-lg mx-auto md:border border-x-cyan-950 rounded-md p-5 space-y-6">
       <AddTodoForm onSubmit={addTodo}/>
         <TodoList 
         todos={todos} 

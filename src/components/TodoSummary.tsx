@@ -12,7 +12,9 @@ export default function TodoSummary({
     const completedTodos = todos.filter((todo) => todo.completed);
     return (
         <div className="flex flex-col justify-center items-center text-gray-400 text-sm font-medium">
-            <p>{completedTodos.length} of {todos.length} todos completed</p>
+            {todos.length > 0 && (
+                <p>{completedTodos.length} of {todos.length} todos completed</p>
+            )}
             {completedTodos.length > 0 && (
                 <button
                 className="text-sm text-gray-400 hover:bg-red-700 hover:text-white border rounded-md p-1 mt-2"
